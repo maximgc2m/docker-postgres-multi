@@ -1,4 +1,4 @@
-# docker-postgres-multi
+# postgis-multi-users
 
 Docker image to run a **PostgreSQL** with **PostGIS** database in a docker container with multiple users and databases.
 
@@ -10,5 +10,5 @@ Image is based of the official postgres:12 image. It modifies the `docker-entryp
 docker run -p 5432:5432 --name postgres-multi
   -e POSTGRES_USERS="user1:password1|user2:password2|user3:password3"
   -e POSTGRES_DATABASES="db1:user1|db2:user2|db3:user3"
-  -it --rm lmmdock/postgres-multi
+  -it --rm mgorozii/postgis-multi-users
 ```
