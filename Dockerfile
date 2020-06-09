@@ -1,5 +1,4 @@
-# vim:set ft=dockerfile:
-FROM postgres:12
+FROM mdillon/postgis
 
 COPY docker-entrypoint.sh /usr/local/bin/
 
